@@ -1,6 +1,6 @@
 # Habi_Test
 
-Introducción
+## Introducción
 
 Habi desea tener una herramienta en la que sus usuarios puedan consultar los inmuebles
 disponibles para la venta. En esta herramienta los usuarios deben ser capaces de ver tanto los
