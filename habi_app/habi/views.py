@@ -46,7 +46,7 @@ class Search_Property (APIView):
                     if int(state_id) != property_state.status_id:
                         continue
                 raw["state"] = {"id": property_state.status_id,
-                                "description": state_label.name}
+                                "description": state_label.label}
                 raw["price"] = i.city
                 raw["description"] = i.description
                 content.append(raw)
