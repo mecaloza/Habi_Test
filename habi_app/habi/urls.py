@@ -5,7 +5,7 @@ from . import views
 
 urlpatterns = [
 
-    path('search-porperty/', views.Search_Property.as_view(), name='search'),
+    path('search-property/', views.Search_Property.as_view(), name='search'),
 
 
 
