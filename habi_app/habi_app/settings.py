@@ -10,7 +10,6 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
-import pymysql
 import os
 import sys
 
@@ -27,9 +26,7 @@ SECRET_KEY = 'pf9e(hsg1*5mmx-=@v5fq1_v_$hixfu=5i3cxm#o^u36=y^7=9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
-pymysql.install_as_MySQLdb()
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
