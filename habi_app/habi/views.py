@@ -32,6 +32,9 @@ class Search_Property (APIView):
                 properties = properties.filter(city=city)
 
             content = []
+            if len(properties) == 0:
+                return Response({"No se encontro ninguna porpiedad que se ajuste a la busqueda"}, status=status.HTTP_200_OK)
+
             for i in properties:
                 raw = {}
                 raw["id"] = i.id
